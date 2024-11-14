@@ -1,0 +1,39 @@
+/* Apply the Inter font to everything */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* App.css */
+.app-layout {
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.main-content {
+  flex: 1; /* Take up remaining space */
+  padding: 20px; /* Padding around the main content */
+  background-color: #f7f7f7; /* Light background for the content area */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styles for dashboard and other screens */
+.dashboard {
+  display: flex;
+  flex-direction: column; /* Column layout for dashboard content */
+}
+
+.dashboard-stats {
+  display: flex; /* Use flexbox for stats layout */
+  justify-content: space-around; /* Space between stats */
+}
+
+.stat-card {
+  background: white; /* Card background */
+  border: 1px solid #e0e0e0; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  width: 30%; /* Width for the cards */
+  text-align: center; /* Center text in cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Card shadow */
+}

@@ -1,0 +1,235 @@
+.dashboard {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h1 {
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-between; /* Space out the stat cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+  }
+  
+  .stat-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    flex: 1; /* Allow cards to grow equally */
+    margin: 10px; /* Spacing between cards */
+    min-width: 200px; /* Minimum width for cards */
+    text-align: center; /* Center align text */
+  }
+  
+  .stat-card h2 {
+    color: #ff5a5f; /* Airbnb's signature color */
+    margin-bottom: 10px; /* Spacing below the heading */
+  }
+  
+  .stat-card p {
+    color: #555; /* Slightly lighter for the total count */
+    font-size: 1.2em; /* Slightly larger font for totals */
+    margin: 0; /* Reset default margin */
+  }
+
+  /* styles.css */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif; /* Use Inter for modern typography */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Slightly larger title */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+    border-left: 5px solid #FF5A5F; /* Airbnb's accent color */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .message {
+    font-size: 1.5rem; /* Larger font for message */
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .timestamp {
+    font-size: 0.9rem;
+    color: #777; /* Slightly lighter color for timestamp */
+    margin-bottom: 10px;
+  }
+  
+  .location {
+    font-size: 0.9rem;
+    color: #777; /* Same lighter color for location */
+    margin-bottom: 5px;
+  }
+  
+  .map {
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resolveButton, .viewButton {
+    background-color: #4CAF50; /* Green for resolve button */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Equal width for buttons */
+    margin: 0 5px; /* Margin for spacing */
+  }
+  
+  .viewButton {
+    background-color: #3F51B5; /* Blue for view button */
+  }
+  
+  .resolveButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .viewButton:hover {
+    background-color: #303F9F; /* Darker blue on hover */
+  }
+  
+  .noData {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+  }
+
+
+ /* General Container Styles */
+.container {
+  max-width: 900px; /* Adjust the max width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Title Styles */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* No Data Message */
+.noData {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Grid Container Styles */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 15px; /* Space between cards */
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+}
+
+/* Image Styles */
+.card img {
+  width: 100%; /* Make the image responsive */
+  border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+/* Message Styles */
+.message {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0; /* Space between message and other content */
+}
+
+/* Timestamp and Location Styles */
+.timestamp,
+.location {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0; /* Space between timestamp/location */
+}
+
+/* Map Styles */
+.map {
+  border-radius: 10px;
+  margin: 10px 0; /* Space above and below the map */
+}
+
+/* Action Button Styles */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Space above the action buttons */
+}
+
+/* Button Styles */
+.resolveButton,
+.viewButton {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  flex: 1; /* Equal width for buttons */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.resolveButton:hover,
+.viewButton:hover {
+  background-color: #007bbf;
+}
+
+  
+  

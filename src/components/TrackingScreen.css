@@ -1,0 +1,61 @@
+/* TrackingScreen.css */
+
+.tracking {
+  padding: 20px;
+  background-color: #f1f3f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracking h1 {
+  font-size: 32px;
+  color: #2c3e50; /* Darker title color */
+  margin-bottom: 20px;
+}
+
+.complaint-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.complaint-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.complaint-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2980b9; /* Highlighted blue for the title */
+}
+
+.complaint-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #34495e; /* Darker text for timestamp */
+}
+
+.complaint-card iframe {
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for map */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .complaint-card {
+    width: 90%;
+  }
+}

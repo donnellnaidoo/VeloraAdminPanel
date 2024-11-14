@@ -1,0 +1,60 @@
+/* ResolvedScreen.css */
+
+.resolved {
+  padding: 20px;
+  background-color: #f7f9fc; /* Light background color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resolved h1 {
+  font-size: 32px;
+  color: #2c3e50; /* Darker title color */
+  margin-bottom: 20px;
+}
+
+.resolved ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.resolved-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resolved-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2980b9; /* Highlighted blue for the description */
+}
+
+.resolved-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #34495e; /* Darker text for details */
+}
+
+.resolved-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .resolved ul {
+    padding: 0 10px;
+  }
+
+  .resolved-card {
+    width: 100%;
+  }
+}

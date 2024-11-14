@@ -1,0 +1,81 @@
+/* TestimoniesScreen.css */
+
+.testimonies {
+  padding: 20px;
+  background-color: #f7f9fc; /* Light background color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonies h1 {
+  font-size: 32px;
+  color: #2c3e50; /* Darker title color */
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  resize: none;
+  min-height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the input */
+}
+
+button {
+  background-color: #2980b9; /* Blue submit button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c5d82; /* Darker blue on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.testimony-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for testimony cards */
+  font-size: 16px;
+  color: #34495e; /* Darker text color */
+  line-height: 1.5;
+}
+
+.testimony-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slight hover effect */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  form,
+  ul {
+    width: 90%;
+  }
+}

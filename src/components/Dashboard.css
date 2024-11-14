@@ -1,0 +1,77 @@
+/* styles.css */
+
+.dashboard {
+    padding: 20px;
+    background-color: #f7f9fc; /* Light background color */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard h1 {
+    font-size: 36px;
+    color: #2C3E50; /* Darker title color */
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card h2 {
+    font-size: 24px;
+    color: #2980b9; /* Highlighted blue for section titles */
+    margin-bottom: 15px;
+  }
+  
+  .stat-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e; /* Darker text for the numbers */
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dashboard-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-card {
+      max-width: 100%;
+      width: 90%;
+    }
+  }
+  
+  /* Toastify Notification Styles */
+  .Toastify__toast--success {
+    background-color: #27ae60; /* Success notification background */
+    color: white;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #e74c3c; /* Error notification background */
+    color: white;
+  }
+  
